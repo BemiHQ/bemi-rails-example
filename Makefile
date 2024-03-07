@@ -37,3 +37,9 @@ psql:
 
 logs:
 	tail -f .devbox/virtenv/postgresql/data/log/postgresql-*.log
+
+migrate:
+	devbox run --env-file ./.env "bin/rails db:migrate"
+
+rollback:
+	devbox run --env-file ./.env "bin/rails db:rollback"
