@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "ruby@latest",
+    "postgresql@latest"
+  ],
+  "shell": {
+    "init_hook": [],
+    "scripts":   {}
+  }
+}
