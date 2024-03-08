@@ -44,3 +44,6 @@ migrate:
 
 rollback:
 	devbox run --env-file ./.env "bin/rails db:rollback"
+
+console:
+	devbox run --env-file ./.env "bin/rails console"

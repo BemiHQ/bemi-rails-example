@@ -26,9 +26,20 @@ default: &default
 
 
 development:
-  <<: *default
-  database: bemi_dev_source
-  port: 5434
+  primary:
+    <<: *default
+    database: bemi_dev_source
+    port: 5434
+  bemi:
+    adapter: postgresql
+    encoding: unicode
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+    host: <%= ENV["DESTINATION_DB_HOST"] %>
+    port: <%= ENV["DESTINATION_DB_PORT"] %>
+    database: <%= ENV["DESTINATION_DB_DATABASE"] %>
+    username: <%= ENV["DESTINATION_DB_USERNAME"] %>
+    password: <%= ENV["DESTINATION_DB_PASSWORD"] %>
+    migrations_paths: db/bemi_migrate
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
