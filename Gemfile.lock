@@ -99,6 +99,9 @@ GEM
   specs:
     ast (2.4.2)
     base64 (0.2.0)
+    bemi-rails (0.1.0)
+      activerecord (>= 6.0.0)
+      railties (>= 6.0.0)
     bigdecimal (3.1.6)
     bindex (0.8.1)
     bootsnap (1.18.3)
@@ -255,6 +258,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bemi-rails
   bootsnap
   brakeman
   debug

@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem 'bemi-rails'
+
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
