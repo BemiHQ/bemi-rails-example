@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'bemi-rails'
+gem 'bemi-rails', '~> 0.4.0'
 
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
