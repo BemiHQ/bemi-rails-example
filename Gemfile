@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'bemi-rails', '~> 0.3.0'
+gem 'bemi-rails', path: '../bemi-rails'
 
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
@@ -36,6 +36,8 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "pry-byebug"
 end
 
 group :development do
